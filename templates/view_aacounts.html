@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>View Accounts</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h2>All Accounts</h2>
+    <table border="1">
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Balance</th>
+        </tr>
+        {% for acc in accounts %}
+        <tr>
+            <td>{{ acc[0] }}</td>
+            <td>{{ acc[1] }}</td>
+            <td>{{ acc[2] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <br><a href="/static">Back</a>
+</body>
+</html>
